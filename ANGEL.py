@@ -12,7 +12,7 @@ current_time = datetime.now()
 formatted_time = current_time.strftime("%a, %d %b %Y %H:%M:%S")
 print(f"INFO  @ {formatted_time}:\n\tRunning ANGEL...\n")
 print('''
-ANGEL (version 2.0)
+ANGEL (version 2.1)
 Automation NGS primer design for Gene Editing in Large scale. Specifically tailored for genome engineering 
 applications, such as nuclease editing, base editing, and prime editing. The tool utilizes the UCSC Genome 
 Browser to identify flanking genomic sequences of the target. NCBI Primer Blast is used to pinpoint primers 
