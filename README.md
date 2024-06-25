@@ -24,7 +24,9 @@ conda activate ANGEL
 conda env update --file requirements.yml
 ```
 ## Usage
+First fill up the Column A and B in 'ANGEL Template.xlxm'.
 ```
 # run ANGEL
 python ANGEL.py
+# Results will be available in the 'ANGEL Template.xlxm' file.
 ```
