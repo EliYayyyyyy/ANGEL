@@ -12,11 +12,11 @@ Automation NGS primer design for Gene Editing in Large scale
 
 Provide step-by-step instructions to help users get your project up and running.
 
-'''bash
+```bash
 #clone ANGEL repository
 git clone https://github.com/EliYayyyyyy/ANGEL.git
 # navigate into repository
 cd ANGEL
 #Create and Activate Anaconda Environment: 
 conda create --name ANGEL
-conda activate ANGEL
+conda activate ANGEL```
