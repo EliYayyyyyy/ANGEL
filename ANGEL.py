@@ -71,7 +71,7 @@ PCR = "https://genome.ucsc.edu/cgi-bin/hgPcr?hgsid=2050588248_uMSfAhhfCjVxuz1fBt
 # NCBI Primer Blast tool link for target on one template
 Primer_Blast = "https://www.ncbi.nlm.nih.gov/tools/primer-blast/index.cgi?"
 # Excel file path and the name of the sheet containing the gRNA sequences
-excel_file_path = '/Users/qichenyuan/Desktop/NGS design.xlsx'  # Example Path of the Excel File
+excel_file_path = 'ANGEL Template.xlsx'  # Example Path of the Excel File
 sheet_name = 'Sheet1'  # Example Sheet
 
 current_time = datetime.now()
