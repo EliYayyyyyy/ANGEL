@@ -20,3 +20,11 @@ cd ANGEL
 #Create and Activate Anaconda Environment: 
 conda create --name ANGEL
 conda activate ANGEL
+#Install Packages from requirement.txt
+pip install -r requirement.txt
+```
+## Usage
+```
+# run ANGEL
+python ANGEL.py
+```
