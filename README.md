@@ -28,5 +28,5 @@ First fill up the Column A and B in 'ANGEL Template.xlsx'.
 ```
 # run ANGEL
 python ANGEL.py
-# Results will be available in the 'ANGEL Template.xlsx' file.
 ```
+Results will be available in the 'ANGEL Template.xlsx' file.
