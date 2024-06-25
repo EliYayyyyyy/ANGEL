@@ -13,9 +13,10 @@ Automation NGS primer design for Gene Editing in Large scale
 Provide step-by-step instructions to help users get your project up and running.
 
 ```bash
-git clone https://github.com/yourusername/your-repository.git
-cd your-repository
-npm install  # or relevant installation command
+git clone https://github.com/EliYayyyyyy/ANGEL.git
+cd ANGEL
+
+
 
 
 
