@@ -4,5 +4,6 @@ dependencies:
   - pip:
     - selenium==4.22.0
     - openpyxl==3.1.4
+    - biopython==1.83
 
 
