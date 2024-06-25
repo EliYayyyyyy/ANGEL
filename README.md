@@ -19,4 +19,4 @@ git clone https://github.com/EliYayyyyyy/ANGEL.git
 cd ANGEL
 #Create and Activate Anaconda Environment: 
 conda create --name ANGEL
-conda activate ANGEL```
+conda activate ANGEL
