@@ -7,6 +7,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
 from datetime import datetime
+from Bio.Seq import Seq
 
 current_time = datetime.now()
 formatted_time = current_time.strftime("%a, %d %b %Y %H:%M:%S")
@@ -109,6 +110,11 @@ for row in range(2, max_row + 1):
     if cell_value is not None:
         non_empty_count += 1
 
+# Define a function to get reverse complement sequence
+def reverse_complement(sequence):
+    seq_obj = Seq(sequence)
+    return str(seq_obj.reverse_complement())
+
 # Iteration started
 current_time = datetime.now()
 formatted_time = current_time.strftime("%a, %d %b %Y %H:%M:%S")
@@ -181,7 +187,7 @@ for i in range(non_empty_count + 2, max_row + 1):
         print(f"INFO  @ {formatted_time}:\n\tExtracted DNA full length is {len(extracted_sequence)} bp!\n")
 
         # Check if target sequence is in extracted sequence
-        if target_sequence in extracted_sequence:
+        if target_sequence in extracted_sequence or target_sequence in reverse_complement(extracted_sequence):
             print(f"INFO  @ {formatted_time}:\n\tTarget sequence matches UCSC browser extracted sequence!\n")
             # Export DNA sequence to Excel
             sheet.cell(row=i, column=3, value=extracted_sequence)
@@ -274,7 +280,7 @@ for i in range(non_empty_count + 2, max_row + 1):
             submit_button = driver.find_element(By.XPATH, '//*[@id="userGuidedForm"]/div/div[1]/input')
             submit_button.click()
             # Wait until you see Primer pair 1 (XPATH = //*[@id="alignments"]/div[1]/h2), typically the best design
-            WebDriverWait(driver, 300).until(
+            WebDriverWait(driver, 3000).until(
                 ec.visibility_of_element_located((By.XPATH, '//*[@id="alignments"]/div[1]/h2')))
             current_time = datetime.now()
             formatted_time = current_time.strftime("%a, %d %b %Y %H:%M:%S")
