@@ -1,0 +1,8 @@
+name: ANGEL
+dependencies:
+  - python=3.11.7
+  - pip:
+    - selenium==4.22.0
+    - openpyxl==3.1.4
+
+
