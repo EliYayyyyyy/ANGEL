@@ -1,0 +1,5 @@
+name: ANGEL  
+
+dependencies:
+  - selenium
+  - openpyxl
