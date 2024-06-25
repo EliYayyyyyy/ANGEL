@@ -24,7 +24,7 @@ conda activate ANGEL
 conda env update --file requirements.yml
 ```
 ## Usage
-First fill up the Column A and B in 'ANGEL Template.xlsx'.
+Enter 'name' and 'target sequence' in the 'ANGEL Template.xlsx' file
 ```
 # run ANGEL
 python ANGEL.py
