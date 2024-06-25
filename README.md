@@ -21,7 +21,7 @@ cd ANGEL
 conda create --name ANGEL
 conda activate ANGEL
 #Install Packages from requirement.txt
-pip install -r requirement.txt
+conda env update --file requirements.yml
 ```
 ## Usage
 ```
