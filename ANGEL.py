@@ -149,9 +149,9 @@ for i in range(non_empty_count + 2, max_row + 1):
         # Hover over the "View" element to reveal the submenu
         actions.move_to_element(view_element).perform()
 
-        # Locate and click the "DNA" submenu
+        # Locate and click the "DNA" submenu using XPath
         dna_submenu = WebDriverWait(driver, 300).until(
-            ec.element_to_be_clickable((By.LINK_TEXT, "DNA"))
+            ec.element_to_be_clickable((By.XPATH, '//*[@id="dnaLink"]'))
         )
         dna_submenu.click()
 
